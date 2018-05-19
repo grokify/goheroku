@@ -19,7 +19,7 @@ CLI app to create boilerplate for a Heroku Go app. These files will allow the "D
 ## Installation
 
 ```
-$ go get github.com/grokfiy/goheroku
+$ go get github.com/grokify/goheroku
 ```
 
 ## Usage
