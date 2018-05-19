@@ -1,0 +1,1 @@
+{% func ProcfileTemplate(projectSlug string) %}web: {%s projectSlug %}{% endfunc %}

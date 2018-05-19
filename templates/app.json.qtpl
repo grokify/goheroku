@@ -1,0 +1,13 @@
+{% func AppJsonTemplate(projectSlug string) %}{
+    "name": "",
+    "description": "",
+    "keywords": [],
+    "website": "",
+    "repository": "https://github.com/.../{%s projectSlug %}",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "Free"
+        }
+    }
+}{% endfunc %}

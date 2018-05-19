@@ -1,0 +1,8 @@
+{% func HerokuYmlTemplate(projectSlug string) %}# https://devcenter.heroku.com/articles/heroku-yml-build-manifest
+# Officially unsupported, but works.
+build:
+  languages:
+    - go
+
+run:
+  web: {%s projectSlug %}{% endfunc %}
