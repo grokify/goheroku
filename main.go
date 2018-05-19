@@ -47,6 +47,8 @@ func main() {
 	}
 
 	files := []File{{
+		ProductSlug:  ".env",
+		TemplateFunc: templates.DotEnvTemplate}, {
 		ProductSlug:  "app.json",
 		TemplateFunc: templates.AppJsonTemplate}, {
 		ProductSlug:  "Dockerfile",

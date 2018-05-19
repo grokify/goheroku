@@ -12,11 +12,12 @@ $ go get github.com/grokfiy/goheroku
 
 ```
 $ goheroku my-project
-Writing file 1: my-project/app.json
-Writing file 2: my-project/Dockerfile
-Writing file 3: my-project/heroku.yml
-Writing file 4: my-project/Makefile
-Writing file 5: my-project/Procfile
+Writing file 1: my-project/.env
+Writing file 2: my-project/app.json
+Writing file 3: my-project/Dockerfile
+Writing file 4: my-project/heroku.yml
+Writing file 5: my-project/Makefile
+Writing file 6: my-project/Procfile
 DONE
 ```
 

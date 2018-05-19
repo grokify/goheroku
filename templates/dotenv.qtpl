@@ -1,0 +1,1 @@
+{% func DotEnvTemplate(projectSlug string) %}REPEAT=10{% endfunc %}
