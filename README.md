@@ -24,4 +24,5 @@ DONE
 
 Find information on deploying Go apps on Heroku here:
 
-* https://devcenter.heroku.com/articles/go-support
+* Developer Guide: https://devcenter.heroku.com/articles/go-support
+* Example Project: https://github.com/heroku/go-getting-started
