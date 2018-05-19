@@ -13,6 +13,7 @@ import (
 	"github.com/grokify/gotilla/os/osutil"
 )
 
+// File is a struct to represent a quicktemplate.
 type File struct {
 	ProductSlug  string
 	TemplateFunc func(string) string
