@@ -14,7 +14,7 @@
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-link]: https://github.com/grokify/goheroku/blob/master/LICENSE
 
-CLI app to create boilerplate for a Heroku Go app. These files will allow the "Deploy to Heroku" button to function.
+CLI app to create boilerplate for a Heroku Go app. These files will also enable the "Deploy to Heroku" button to function.
 
 ## Installation
 
