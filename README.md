@@ -35,6 +35,13 @@ Writing file 6: my-project/Procfile
 DONE
 ```
 
+Also add the following Heroku directive to your `go.mod` file above the go version number line.
+
+```
+// +heroku goVersion go1.15
+go 1.15
+```
+
 ## More Info
 
 Find information on deploying Go apps on Heroku here:
