@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/grokify/goheroku/templates"
-	"github.com/grokify/gotilla/os/osutil"
+	"github.com/grokify/simplego/os/osutil"
 )
 
 // File is a struct to represent a quicktemplate.
