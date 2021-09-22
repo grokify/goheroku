@@ -35,11 +35,11 @@ Writing file 6: my-project/Procfile
 DONE
 ```
 
-Also add the following Heroku directive to your `go.mod` file above the go version number line.
+You will need to use `go mod init` to create your `go.mod` file. Add the following Heroku directive to your `go.mod` file above the go version number line.
 
 ```
-// +heroku goVersion go1.15
-go 1.15
+// +heroku goVersion go1.16
+go 1.16
 ```
 
 ## More Info
