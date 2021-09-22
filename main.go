@@ -10,7 +10,6 @@ import (
 	"strings"
 
 	"github.com/grokify/goheroku/templates"
-	"github.com/grokify/simplego/os/osutil"
 )
 
 // File is a struct to represent a quicktemplate.
@@ -34,7 +33,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	exists, err := osutil.Exists(projectSlug)
+	exists, err := exists(projectSlug)
 	if err != nil {
 		log.Fatal(err)
 	} else if exists {
@@ -73,4 +72,16 @@ func main() {
 	}
 
 	fmt.Println("DONE")
+}
+
+// exists checks whether the named filepath exists or not for
+// a file or directory.
+func exists(name string) (bool, error) {
+	_, err := os.Stat(name)
+	if os.IsNotExist(err) {
+		return false, nil
+	} else if err != nil {
+		return false, err
+	}
+	return true, nil
 }
