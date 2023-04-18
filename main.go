@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -63,7 +62,7 @@ func main() {
 	for i, file := range files {
 		str := file.TemplateFunc(projectSlug)
 		filename := filepath.Join(projectSlug, file.ProductSlug)
-		err := ioutil.WriteFile(filename, []byte(str), 0600)
+		err := os.WriteFile(filename, []byte(str), 0600)
 		fmt.Printf("Writing file %v: %v", i+1, filename)
 		if err != nil {
 			panic(err)
