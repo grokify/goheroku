@@ -42,9 +42,45 @@ You will need to use `go mod init` to create your `go.mod` file. Add the followi
 go 1.16
 ```
 
+## Updating Project Docs
+
+Once your repo is ready for Heroku, you can add various options to "Deploy to Heroku" to your `README.md` file. The following includes adding a shield, button, and a CLI manual mode.
+
+### Shield
+
+The following adds a shield that looks like ![](https://img.shields.io/badge/%E2%86%91_deploy-Heroku-7056bf.svg?style=flat) to your file.
+
+```markdown
+[![Heroku][heroku-svg]][heroku-url]
+ [heroku-svg]: https://img.shields.io/badge/%E2%86%91_deploy-Heroku-7056bf.svg?style=flat
+ [heroku-url]: https://heroku.com/deploy
+```
+
+### Button
+
+The following adds a button that looks like ![](https://www.herokucdn.com/deploy/button.svg) to your file.
+
+```markdown
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+```
+
+### Manual
+
+```sh
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+
 ## More Info
 
 Find information on deploying Go apps on Heroku here:
 
 * Developer Guide: https://devcenter.heroku.com/articles/go-support
 * Example Project: https://github.com/heroku/go-getting-started
+
+
+
+=====
+
+
