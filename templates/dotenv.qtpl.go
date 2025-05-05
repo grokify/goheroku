@@ -20,7 +20,8 @@ var (
 //line dotenv.qtpl:1
 func StreamDotEnvTemplate(qw422016 *qt422016.Writer, projectSlug string) {
 //line dotenv.qtpl:1
-qw422016.N().S(`REPEAT=10`) }
+	qw422016.N().S(`REPEAT=10`)
+}
 
 //line dotenv.qtpl:1
 //line dotenv.qtpl:1
