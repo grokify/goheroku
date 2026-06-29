@@ -32,6 +32,13 @@ func main() {
 		os.Exit(1)
 	}
 
+	// Sanitize to prevent path traversal attacks (G703)
+	projectSlug = filepath.Clean(projectSlug)
+	if projectSlug != filepath.Base(projectSlug) {
+		fmt.Println("Project name cannot contain path separators.")
+		os.Exit(1)
+	}
+
 	exists, err := exists(projectSlug)
 	if err != nil {
 		log.Fatal(err)
